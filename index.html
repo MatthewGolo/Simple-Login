@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Simple Log in Form</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Login form with JavaScript Validation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
     <nav>
@@ -17,19 +18,40 @@
         </ul>
     </nav>
     <br><br>
-    <form>
-        <div>
-            <h1 id="log">LOG IN</h1> <br>
-            <h4 id="reg">Already have an Account? Login Here!</h6><a href="/register"></a></h4><br>
-            <br>
-            <label class="label"> Username </label> <br>
-            <input type="text" id="username" class="txt" required /> <br>
-            <label class="label"> Password </label> <br>
-            <input type="password" id="passw" class="txt" required/> <br><br>
-            <button id="btn1">Login</button>
+
+<div class="logo text-center">
+</div>
+<div class="wrapper">
+  <div class="inner-warpper text-center">
+    <h2 class="title">Login to your account</h2>
+    <form action="" id="formvalidate">
+      <div class="input-group">
+        <label class="palceholder" for="userName">User Name</label>
+        <input class="form-control" name="userName" id="userName" type="text" placeholder="" />
+        <span class="lighting"></span>
+      </div>
+      <div class="input-group">
+        <label class="palceholder" for="userPassword">Password</label>
+        <input class="form-control" name="userPassword" id="userPassword" type="password" placeholder="" />
+        <span class="lighting"></span>
+      </div>
+
+      <button type="submit" id="login">Login</button>
+      <div class="clearfix supporter">
+        <div class="pull-left remember-me">
+          <input id="rememberMe" type="checkbox">
+          <label for="rememberMe">Remember Me</label>
         </div>
+        <a class="forgot pull-right" href="#">Forgot Password?</a>
+      </div>
     </form>
-    <br><br>
-    <footer class="footer">All Rights Reserved @2024</footer>
+  </div>
+  <div class="signup-wrapper text-center">
+    <a href="#">Don't have an accout? <span class="text-primary">Create One</span></a>
+  </div>
+</div>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script><script  src="./script.js"></script>
+
 </body>
 </html>
