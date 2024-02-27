@@ -1,1 +1,1 @@
-Simple Login
+Simple Login and Registration form
